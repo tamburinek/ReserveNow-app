@@ -1,0 +1,44 @@
+.topNav {
+  font-size: 1.7vh;
+  border-bottom: 0.2vh solid #A1C7FF;
+  padding-bottom: 2.5vh;
+  padding-top: 2.5vh;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 9999;
+
+  img {
+    position: absolute;
+    left: 1vh;
+    width: 5vh;
+  }
+
+  .buttonsContainer{
+    position: absolute;
+    right: 2vh;
+
+    button{
+      margin-left: 1vh;
+    }
+  }
+}
+
+.linksContainer > a {
+  text-decoration: none;
+  color: #0D6EFD;
+  margin-left: 2vh;
+  margin-right: 2vh;
+
+  &:hover {
+    color: #083372;
+  }
+}
+

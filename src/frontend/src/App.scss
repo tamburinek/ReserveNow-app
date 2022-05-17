@@ -1,0 +1,132 @@
+body {
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Sora', sans-serif;
+}
+
+//BUTTONS
+.button-primary {
+    background-color: #0D6EFD;
+    border: none;
+    border-radius: 0.7vh;
+
+    width: 9vh;
+    height: 4.5vh;
+
+    font-size: 1.6vh;
+    color: white;
+    overflow-wrap: break-word;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &:hover {
+        background-color: #0057e0;
+    }
+}
+
+.button-primary-outline {
+    background-color: white;
+    border: 0.2vh solid #0D6EFD;
+    border-radius: 0.7vh;
+
+    width: 9vh;
+    height: 4.5vh;
+
+    font-size: 1.6vh;
+    color: #0D6EFD;
+    overflow-wrap: break-word;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    &:hover {
+        background-color: #0D6EFD;
+        color: white;
+        border: none;
+    }
+}
+
+.lg {
+    width: 14vh;
+    height: 6vh;
+    font-size: 2vh;
+}
+.xlg {
+    width: 21vh;
+    height: 6vh;
+    font-size: 2vh;
+}
+
+
+
+.sm {
+    width: 7.5vh;
+    height: 3.5vh;
+    font-size: 1.3vh;
+}
+
+.bx-sh {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+//INPUTS
+.input-primary {
+    width: 40vh;
+    height: 5vh;
+
+    border: none;
+    border-radius: 1.5vh;
+
+    text-indent: 2vh;
+
+    &.lg {
+        width: 50vh;
+        height: 6vh;
+        border-radius: 2vh;
+    }
+
+    &.sm {
+        width: 30vh;
+        height: 4vh;
+        border-radius: 1.3vh;
+    }
+
+    &.sh{
+        width: 25vh;
+    }
+
+    &.search{
+        border-radius: 0.7vh;
+        outline: 0.3vh solid #CFD4D9;
+    }
+
+    &:focus {
+        outline: 0.4vh solid #306DF5;
+    }
+
+    &.error {
+        outline: 0.4vh solid #f53030;
+    }
+
+    &.correct {
+        outline: 0.4vh solid #17c428;
+    }
+
+    &.fl{
+        width: initial;
+    }
+}
+
+.fc {
+    width: 1150px;
+}
+.fc-timegrid {
+    width: 1150px;
+}

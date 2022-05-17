@@ -1,0 +1,72 @@
+.contactSection {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+
+    background-color: #212529;
+    color: white;
+
+    font-size: 2vh;
+
+    .contents {
+        display: flex;
+        justify-content: space-around;
+        flex: 1;
+
+        .content {
+
+            img {
+                width: 13vh;
+            }
+
+            .contactHeader {
+                font-weight: 500;
+            }
+
+            .contactsInfo {
+
+                .contactInfo {
+                    font-size: 1.8vh;
+                    margin-top: 2.5vh;
+
+                    display: flex;
+                    align-items: center;
+
+                    svg {
+                        padding-right: 2vh;
+                    }
+                }
+
+            }
+
+            .formHeader {
+                font-weight: 500;
+            }
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: flex-end;
+
+                input {
+                    margin-bottom: 1.5vh;
+
+                    &:nth-of-type(1) {
+                        margin-top: 2.5vh;
+                    }
+                }
+
+                textarea{
+                    height: 12vh;
+                    padding-top: 1.5vh;
+                    margin-bottom: 1.5vh;
+                    resize: none;
+                }
+            }
+        }
+
+    }
+
+}
+

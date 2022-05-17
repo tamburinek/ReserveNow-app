@@ -1,0 +1,125 @@
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .content {
+        width: 50%;
+        height: 70vh;
+        background-color: white;
+        border: 2px solid rgba(0, 0, 0, 0.22);
+        box-sizing: border-box;
+        box-shadow: 3px 4px 15px -1px rgba(0, 0, 0, 0.3);
+        border-radius: 2vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-shrink: 0;
+
+
+        .topContent {
+            display: flex;
+
+
+            .pie {
+            }
+
+            .timeline {
+                font-size: 0.8rem;
+                display: flex;
+                height: 30vh;
+                overflow: auto;
+
+                table {
+                    text-align: left;
+
+                    tr:nth-of-type(1) {
+                        background-color: white;
+                        position: sticky;
+                        top: 0;
+
+                        th{
+                            outline: white 1px solid;
+                        }
+                    }
+                }
+
+
+                .times {
+                    th {
+                        padding: 1.5vh;
+                    }
+                }
+
+                .place {
+                    th {
+                        padding: 1vh;
+                    }
+
+                    td {
+                        background-color: #ECECEC;
+                        border: none;
+                        outline: #42474D solid 0.1px;
+
+                        &.active {
+                            background-color: #86D3EB;
+                        }
+
+                        &:nth-of-type(1) {
+                            border-radius: 1vh 0 0 1vh;
+                        }
+
+                        &:last-child {
+                            border-radius: 0 1vh 1vh 0;
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .bottomContent {
+            margin-top: 0.5vh;
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+
+            height: 20vh;
+
+            overflow: auto;
+
+            font-size: 0.8rem;
+
+            table {
+                text-align: left;
+
+
+                tr {
+                    &:nth-of-type(1) {
+                        position: sticky;
+                        top: 0;
+                        background-color: white;
+                        padding: 1vh;
+                    }
+
+                    td {
+                        padding: 1vh 2vh 0;
+                    }
+
+                    th {
+                        padding: 2vh;
+                    }
+                }
+            }
+        }
+    }
+}

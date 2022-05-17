@@ -1,0 +1,67 @@
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .content {
+        width: 35%;
+        height: 25vh;
+        background-color: white;
+        border: 2px solid rgba(0, 0, 0, 0.22);
+        box-sizing: border-box;
+        box-shadow: 3px 4px 15px -1px rgba(0, 0, 0, 0.3);
+        border-radius: 2vh;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 3vh;
+
+        .header {
+            flex-basis: 10%;
+
+            font-size: 3vh;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.22);
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            margin-top: 2vh;
+
+            button {
+                margin: 5px;
+                width: 10vh;
+                cursor: pointer;
+                color: #FFFFFF;
+            }
+
+            .buttonYes {
+                border-color: #00955B;
+                background:  #00955B;
+            }
+
+            .buttonYes:hover {
+                background: #028351;
+                color: #FFFFFF;
+            }
+
+            .buttonNo {
+                border-color: #DD5544;
+                background:  #DD5544;
+            }
+
+            .buttonNo:hover{
+                background: #af4436;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

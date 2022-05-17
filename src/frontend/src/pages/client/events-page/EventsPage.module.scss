@@ -1,0 +1,359 @@
+.sideBar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.sideBar button {
+    margin-top: 15px;
+    width: 120px;
+    transition: all 0.4s ease;
+}
+
+.sectionBody {
+    display: flex;
+    flex-grow: 1;
+}
+
+.calendarBody {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    min-height: 650px;
+    margin: 7vh;
+    background-color: #F6FBFF;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px grey;
+}
+
+.calendarBody button {
+    position: relative;
+}
+
+.rightSide {
+    position: relative;
+    top: 100px;
+    margin: 15px;
+    display: block;
+    background-color: white;
+    width: 60px;
+    height: 520px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.topSide {
+    margin: 15px -8px;
+    top: 45px;
+    position: relative;
+    background-color: white;
+    display: block;
+    width: 92%;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.days {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 95px;
+    font-size: 14px;
+}
+
+.bodySide {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.modalBackground {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+
+    .modalContent {
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        background-color: #F6FBFF;
+        min-width: 1000px;
+        height: 90vh;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.modalBody {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        background-color: #e3eeff;
+        border-radius: 2vh;
+        padding: 2%;
+
+
+        label {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                margin-top: 1vh;
+            }
+        }
+    }
+
+    .error {
+        color: red;
+    }
+}
+
+.modalFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.modalFooter button {
+    width: 100px;
+    margin: 10px;
+}
+
+.modalTypeBoxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+}
+
+.modalTypeInterval input {
+    cursor: pointer;
+}
+
+.modalTypeInterval {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.interval {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.interval .interBox1 {
+    display: flex;
+    background-color: #42474D;
+    width: 50px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 2px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.interval .interBox2 {
+    background-color: #42474D;
+    width: 50px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 2px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.interval .interBox3 {
+    background-color: #42474D;
+    width: 50px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 2px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.inter {
+    background: repeating-linear-gradient(-45deg, #c4c4c4, #c4c4c4 2px, #42474D 3px, #42474D 5px);
+    width: 48px;
+    border-radius: 5px;
+    height: 70px;
+}
+
+.inter2 {
+    background: repeating-linear-gradient(-45deg, #c4c4c4, #c4c4c4 2px, #42474D 3px, #42474D 5px);
+    width: 48px;
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.inter3 {
+    background: repeating-linear-gradient(-45deg, #c4c4c4, #c4c4c4 2px, #42474D 3px, #42474D 5px);
+    width: 48px;
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 70px;
+}
+
+.inter1 {
+    background: repeating-linear-gradient(-45deg, #c4c4c4, #c4c4c4 2px, #42474D 3px, #42474D 5px);
+    width: 48px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.modalInputBoxes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalInputInputes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalInputInputes div {
+    margin-top: 20px;
+}
+
+.modalInputInputes div input {
+    margin-left: 10px;
+    width: 220px;
+}
+
+.modalActivity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modalActivityBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    width: 700px;
+    border-radius: 5px;
+}
+
+.eventModalBackground {
+    background-color: rgba(0, 0, 0, 0.6);;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+
+    .eventContent {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        background-color: #F6FBFF;
+        min-width: 500px;
+        height: 400px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+.eventModalTermin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.eventModalDates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.eventModalDates div {
+    margin: 10px;
+}
+
+.eventButtons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.eventButtons div {
+    margin: 30px;
+}
+
+fieldset {
+    border: none;
+    text-align: center;
+}
+
+.eventType {
+    text-align: center;
+    width: 100vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.when {
+
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    label > div > input {
+        margin-left: 1vh;
+        width: 15vh;
+        box-sizing: border-box;
+        height: 5vh;
+        padding-right: 6%;
+        border: none;
+        border-radius: 1.5vh;
+
+        text-indent: 1vh;
+
+        &:focus {
+            outline: 0.4vh solid #306DF5;
+        }
+    }
+}

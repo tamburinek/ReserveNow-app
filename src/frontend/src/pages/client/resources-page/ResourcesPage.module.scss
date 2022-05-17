@@ -1,0 +1,27 @@
+.menu {
+    margin: 2vh;
+    height: 8vh;
+    border-radius: 4vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    button {
+        font-size: 0.8rem;
+        margin-left: 1vh;
+        width: 14.5vh;
+        height: 6vh;
+        border-radius: 3vh;
+        border: 1px solid rgba(13, 110, 253, 0.28);
+        background-color: white;
+        color: #1f77ef;
+
+        &.active {
+            border:none;
+            background-color: #e6f1ff;
+            color: #0D6EFD;
+        }
+    }
+
+}

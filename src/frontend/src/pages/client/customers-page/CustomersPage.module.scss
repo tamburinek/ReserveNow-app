@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+
+  .buttonContainer {
+    margin: 0 0 0 auto;
+
+    .button {
+      min-width: 150px;
+      width: 10%;
+      height: 4.5vh;
+      margin-bottom: 1.3vh;
+      cursor: pointer;
+    }
+  }
+
+  .tableContainer {
+    display: flex;
+    flex-direction: column;
+
+    margin: 2vh auto;
+    width: 90%;
+    min-height: 70vh;
+
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    box-shadow: 4px 4px 12px 1px rgba(0, 0, 0, 0.24);
+    border-radius: 1.5vh;
+
+    flex-basis: 90%;
+
+    table {
+      width: 99%;
+
+      table-layout: fixed;
+      margin: 4px;
+
+      border: 2px solid white;
+      border-collapse:collapse;
+
+      .checkedCheckbox {
+        background: rgba(13, 110, 253, 0.31);
+      }
+
+      th {
+        font-weight: 400;
+      }
+
+      input[type="checkbox"]:checked ~ td {
+        background-color: red;
+      }
+
+      td, th {
+        border: 1px solid rgba(0, 0, 0, 0.23);
+        height: 8vh;
+        text-align: center;
+
+        p {
+          margin: 1vh;
+        }
+
+        .buttonsTable {
+
+          button {
+            cursor: pointer;
+            margin: 5px;
+            width: 10vh;
+          }
+
+          .buttonDelete {
+            border-color: #DD5544;
+            color:  #DD5544;
+          }
+
+          .buttonDelete:hover {
+            background: #DD5544;
+            color: #FFFFFF;
+          }
+
+          .buttonEdit {
+            border-color: #00955B;
+            color:  #00955B;
+          }
+
+          .buttonEdit:hover {
+            background: #00955B;
+            color: #FFFFFF;
+          }
+        }
+      }
+
+      .collCheckbox {
+        width: 100%;
+        text-align: center;
+      }
+
+      input {
+        margin-bottom: 1vh;
+        width: 90%;
+      }
+    }
+
+    .buttonsContainer {
+      width: 100%;
+
+      div {
+        float: right;
+        padding: 1vh;
+
+        button {
+          cursor: pointer;
+          min-width: 100px;
+          margin: 5px;
+        }
+      }
+    }
+  }
+
+  .containerFunction {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+
+    button {
+      margin: 0 1vh;
+      min-width: 100px;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,290 @@
+.container {
+    padding-bottom: 20px;
+}
+
+.servicesNavigation {
+    position: sticky;
+    border-bottom: 0.2vh solid rgb(0, 0, 0, 0.25);
+    height: 3vh;
+    padding: 0.8vh 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        align-items: center;
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: #000000;
+
+        &.active, &:hover {
+            padding: 1.2vh;
+            border-radius: 0.7vh;
+            color: white;
+            background-color: #0D6EFD;
+        }
+    }
+}
+
+.title {
+    font-size: larger;
+}
+
+.name {
+    cursor: pointer;
+}
+
+.name:hover {
+    text-decoration: underline;
+}
+
+.upcomingSections {
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    background: rgb(230, 230, 230, 0.62);
+    height: auto;
+    width: 70%;
+    border-radius: 10px;
+    position: relative;
+
+    p {
+        margin-left: 2vh;
+        padding-top: 1vh;
+    }
+}
+
+.sections {
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    background: #FFFFFF;
+    height: auto;
+    width: 70%;
+    border-radius: 10px;
+    position: relative;
+
+    p {
+        margin-left: 2vh;
+        padding-top: 1vh;
+    }
+}
+
+.blocks {
+    > div {
+        overflow: auto;
+        margin: 2vh;
+        padding: 2%;
+        background-color: #efefef;
+        border-radius: 1vh;
+
+        h3 {
+            margin: 2vh;
+        }
+    }
+
+    overflow: auto;
+    white-space: nowrap;
+
+
+    padding-bottom: 10px;
+
+    .block {
+        margin-left: 2vh;
+        padding: 2vh;
+        width: auto;
+        border: 0.3vh solid #cad8ff;
+        border-radius: 10px;
+        background: white;
+        display: inline-block;
+        text-align: center;
+
+        position: relative;
+
+        img {
+            height: 20vh;
+            width: available;
+            border-radius: 10px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        p {
+            word-wrap: break-word;
+            text-align: left;
+            margin: 0px 1vh 0px 1vh;
+        }
+
+        .rating {
+            position: absolute;
+            right: 0px;
+            bottom: 2px;
+            display: inline-flex;
+
+            p {
+                color: #FFC459;
+                font-weight: bold;
+            }
+
+            img {
+                margin-top: 3px;
+                margin-left: 0px;
+                height: 3.2vh;
+                width: 3.2vh;
+            }
+        }
+    }
+}
+
+h3 {
+    display: flex;
+    align-content: baseline;
+    position: sticky;
+    left: 0;
+}
+
+.feed {
+    img {
+        width: 20%;
+    }
+
+    margin-left: 5px;
+    color: #f6c66b;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    flex-direction: column;
+
+
+    .container h2 {
+        font-family: 'Sora', sans-serif;
+        margin-top: 20vh;
+        animation-name: render;
+        animation-duration: 2s;
+    }
+
+    .container p {
+        animation-name: render;
+        animation-duration: 4s;
+    }
+
+    .logoContainer img {
+        width: 25vh;
+    }
+
+    .container {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20vh;
+    }
+
+    @keyframes render {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    .presentationContainer {
+        text-align: center;
+    }
+
+    iframe {
+        margin-top: 7vh;
+        width: 145vh;
+        height: 86vh;
+    }
+
+    .activeUp {
+        animation-name: logo-upper-animate;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+        transform-origin: 47% 62%;
+    }
+
+    .activeBottom {
+        animation-name: logo-bottom-animate;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+        transform-origin: 47% 80%;
+    }
+
+    .logoContainer {
+        width: 25vh;
+        height: 25vh;
+        text-align: center;
+        background: #006cff;
+        border-radius: 3vh;
+    }
+
+    #mid-o-logo {
+        transform: translate(15vh, 9vh);
+    }
+
+    @keyframes logo-bottom-animate {
+        0% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        25% {
+            transform: matrix(1, 0, 0, 1, 0, 12);
+        }
+        50% {
+            transform: matrix(1, 0, 0, 1, 0, -15);
+        }
+        75% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        75% {
+            transform: rotate(0);
+        }
+        85% {
+            transform: rotate(390deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes logo-upper-animate {
+        0% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        25% {
+            transform: matrix(1, 0, 0, 1, 0, -12);
+        }
+        50% {
+            transform: matrix(1, 0, 0, 1, 0, 15);
+        }
+        75% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        75% {
+            transform: rotate(0);
+        }
+        85% {
+            transform: rotate(-390deg);
+        }
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+
+}

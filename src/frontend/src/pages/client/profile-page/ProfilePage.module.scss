@@ -1,0 +1,45 @@
+.container {
+    padding: 1.5%;
+    .header {
+        display: flex;
+        align-items: center;
+
+        .topic {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+    }
+
+    .content {
+        padding: 2%;
+        gap: 20%;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+.userForm {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: #e3eeff;
+    border-radius: 2vh;
+    padding: 2%;
+
+
+
+    label {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            margin-top: 1vh;
+        }
+    }
+}
+
+.error{
+    color: red;
+}

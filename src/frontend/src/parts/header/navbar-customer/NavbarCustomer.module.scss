@@ -1,0 +1,67 @@
+.menu {
+    border-bottom: 0.2vh solid #A1C7FF;
+    padding: 2vh;
+    height: 4vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+        display: flex;
+        align-items: center;
+
+        font-size: 0.8rem;
+        text-decoration: none;
+        color: #0D6EFD;
+    }
+
+    img {
+        width: 5vh;
+    }
+
+    .leftSideMenu {
+        display: flex;
+        align-items: center;
+
+        a {
+            padding: 1.4vh;
+            margin: 1vh;
+
+            &:hover {
+                color: #003079;
+            }
+
+            &.active {
+                padding: 1.4vh;
+                border-radius: 0.7vh;
+                color: white;
+                background-color: #0D6EFD;
+            }
+        }
+    }
+
+    .rightSideMenu {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 1.5em;
+        }
+
+        .iconContainer {
+            display: flex;
+            align-items: center;
+            margin-right: 2vh;
+        }
+    }
+
+    .searchContainer {
+        display: flex;
+        align-items: center;
+
+        input {
+            margin-right: 1vh;
+        }
+    }
+}

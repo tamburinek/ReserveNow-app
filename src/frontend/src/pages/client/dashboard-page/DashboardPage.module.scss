@@ -1,0 +1,337 @@
+.container {
+    display: flex;
+    width: 100%;
+
+
+    .feedbackContainer {
+        border: 1px solid rgba(0, 0, 0, 0.23);
+        box-shadow: 4px 4px 12px 1px rgba(0, 0, 0, 0.24);
+        border-radius: 15px;
+        width: 30%;
+        margin: 2vh;
+        display: flex;
+        flex-direction: column;
+        padding: 2vh;
+        box-sizing: border-box;
+        height: 80vh;
+        overflow: auto;
+
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    padding: 2%;
+
+
+    .topContent {
+        display: flex;
+        //justify-content: space-between;
+
+        .cards {
+            border: 1px solid rgba(0, 0, 0, 0.23);
+            box-shadow: 4px 4px 12px 1px rgba(0, 0, 0, 0.24);
+            border-radius: 15px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            margin: 2vh;
+
+            height: 30vh;
+            width: 20%;
+
+            p {
+                font-size: 1.7rem;
+            }
+
+            img {
+                margin-top: 2vh;
+                width: 50%;
+            }
+
+            .button {
+                width: 90%;
+                height: 4.5vh;
+                margin-bottom: 1.3vh;
+                border-radius: 1.2vh;
+            }
+        }
+    }
+
+    .bottomContent {
+        display: flex;
+
+        .mainGraph {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 45vh;
+            width: 100%;
+
+            border: 1px solid rgba(0, 0, 0, 0.23);
+            box-shadow: 4px 4px 12px 1px rgba(0, 0, 0, 0.24);
+            border-radius: 1.5vh;
+            margin: 2vh;
+
+            p {
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+        }
+
+        .kolacGraph {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+            padding: 1%;
+            box-sizing: border-box;
+
+            height: 45vh;
+            width: 26%;
+
+            border: 1px solid rgba(0, 0, 0, 0.23);
+            box-shadow: 4px 4px 12px 1px rgba(0, 0, 0, 0.24);
+            border-radius: 1.5vh;
+            margin: 2vh;
+
+            p {
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+
+            button {
+                width: 95%;
+                border-radius: 1.3vh;
+                margin-bottom: 1vh;
+            }
+
+            .pie {
+                height: 68%;
+                width: 100%;
+                flex: 2;
+            }
+        }
+    }
+}
+
+.chart {
+    width: 82%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexRow {
+    display: flex;
+
+}
+
+.left {
+    width: 65%;
+}
+
+.loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    flex-direction: column;
+
+
+    .container h2 {
+        font-family: 'Sora', sans-serif;
+        margin-top: 20vh;
+        animation-name: render;
+        animation-duration: 2s;
+    }
+
+    .container p {
+        animation-name: render;
+        animation-duration: 4s;
+    }
+
+    .logoContainer img {
+        width: 25vh;
+    }
+
+    .container {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20vh;
+    }
+
+    @keyframes render {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    .presentationContainer {
+        text-align: center;
+    }
+
+    iframe {
+        margin-top: 7vh;
+        width: 145vh;
+        height: 86vh;
+    }
+
+    .activeUp {
+        animation-name: logo-upper-animate;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+        transform-origin: 47% 62%;
+    }
+
+    .activeBottom {
+        animation-name: logo-bottom-animate;
+        animation-duration: 2s;
+        animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+        transform-origin: 47% 80%;
+    }
+
+    .logoContainer {
+        width: 25vh;
+        height: 25vh;
+        text-align: center;
+        background: #006cff;
+        border-radius: 3vh;
+    }
+
+    #mid-o-logo {
+        transform: translate(15vh, 9vh);
+    }
+
+    @keyframes logo-bottom-animate {
+        0% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        25% {
+            transform: matrix(1, 0, 0, 1, 0, 12);
+        }
+        50% {
+            transform: matrix(1, 0, 0, 1, 0, -15);
+        }
+        75% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        75% {
+            transform: rotate(0);
+        }
+        85% {
+            transform: rotate(390deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes logo-upper-animate {
+        0% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        25% {
+            transform: matrix(1, 0, 0, 1, 0, -12);
+        }
+        50% {
+            transform: matrix(1, 0, 0, 1, 0, 15);
+        }
+        75% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        75% {
+            transform: rotate(0);
+        }
+        85% {
+            transform: rotate(-390deg);
+        }
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+
+}
+
+.x{
+    text-align: center;
+
+    .activeUp {
+        animation-name: logo-upper-animate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+        transform-origin: 47% 62%;
+    }
+
+    .activeBottom {
+        animation-name: logo-bottom-animate;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+        transform-origin: 47% 80%;
+    }
+
+    @keyframes logo-bottom-animate {
+        0% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        25% {
+            transform: matrix(1, 0, 0, 1, 0, 12);
+        }
+        50% {
+            transform: matrix(1, 0, 0, 1, 0, -15);
+        }
+        75% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        75% {
+            transform: rotate(0);
+        }
+        85% {
+            transform: rotate(390deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes logo-upper-animate {
+        0% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        25% {
+            transform: matrix(1, 0, 0, 1, 0, -12);
+        }
+        50% {
+            transform: matrix(1, 0, 0, 1, 0, 15);
+        }
+        75% {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+        }
+        75% {
+            transform: rotate(0);
+        }
+        85% {
+            transform: rotate(-390deg);
+        }
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+
+}

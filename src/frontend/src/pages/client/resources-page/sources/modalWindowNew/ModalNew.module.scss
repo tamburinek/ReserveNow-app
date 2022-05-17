@@ -1,0 +1,151 @@
+.modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    .content {
+        width: 35%;
+        //height: 70vh;
+        background-color: white;
+        border: 2px solid rgba(0, 0, 0, 0.22);
+        box-sizing: border-box;
+        box-shadow: 3px 4px 15px -1px rgba(0, 0, 0, 0.3);
+        border-radius: 2vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        padding: 4vh;
+
+        .header {
+            flex-basis: 10%;
+
+            font-size: 3vh;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.22);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 2vh;
+            background-color: #e3eeff;
+            border-radius: 2vh;
+            padding: 2%;
+
+
+            label {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    margin-top: 1vh;
+                }
+            }
+        }
+
+        .error {
+            color: red;
+        }
+
+        .form {
+            display: flex;
+            //flex-basis: 90%;
+            flex-direction: row;
+            justify-content: center;
+
+            div {
+                flex-basis: 90%;
+                margin: 1vh;
+            }
+
+            label, input, textarea {
+                display: block;
+                margin: 1vh auto;
+            }
+
+            label {
+                margin-top: 3vh;
+                margin-left: 4%;
+            }
+
+            input, textarea {
+                width: 90%;
+                height: 3vh;
+            }
+
+            .description {
+                height: 15vh;
+            }
+
+            .checkboxContainer {
+                margin-top: 3vh;
+                display: flex;
+                flex-direction: row;
+
+                label {
+                    margin: auto 1vh;
+                }
+
+                .checkbox {
+                    width: 20px;
+                    margin: 0;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                flex-direction: row;
+                float: right;
+                height: 60%;
+
+                button {
+                    margin: 5px;
+                    width: 10vh;
+
+                    cursor: pointer;
+                    color: #FFFFFF;
+                }
+
+                .buttonSave {
+                    border-color: #00955B;
+                    background: #00955B;
+                }
+
+                .buttonSave:hover {
+                    background: #028351;
+                    color: #FFFFFF;
+                }
+
+                .buttonCancel {
+                    border-color: #DD5544;
+                    background: #DD5544;
+                }
+
+                .buttonCancel:hover {
+                    background: #af4436;
+                    color: #FFFFFF;
+                }
+            }
+
+            .selectContainer {
+                display: flex;
+                flex-direction: row;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.error {
+    color: red;
+}
